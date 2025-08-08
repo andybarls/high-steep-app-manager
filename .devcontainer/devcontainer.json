@@ -1,0 +1,21 @@
+{
+  "name": "High Steep App Manager",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite App",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "remoteUser": "node"
+}
